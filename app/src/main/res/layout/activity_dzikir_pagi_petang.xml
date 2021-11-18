@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:paddingHorizontal="@dimen/_16dp"
+    tools:context=".activity.DzikirPagiPetangActivity">
+
+    <ImageView
+        android:id="@+id/ivBackPagiPetang"
+        android:layout_width="@dimen/_30dp"
+        android:layout_height="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:contentDescription="@string/imageview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/titlePagiPetang"
+        android:layout_width="@dimen/_250dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="@string/dzikir_pagi_petang"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBackPagiPetang" />
+
+    <ImageView
+        android:id="@+id/ivPagiPetang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageview"
+        app:layout_constraintBottom_toBottomOf="@+id/titlePagiPetang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titlePagiPetang"
+        app:layout_constraintTop_toTopOf="@+id/titlePagiPetang"
+        app:srcCompat="@drawable/ic_dzikir_pagi_petang" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvDzikirPagi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:backgroundTint="@color/black45"
+        app:cardCornerRadius="@dimen/_20dp"
+        app:layout_constraintBottom_toTopOf="@id/cvDzikirPetang"
+        app:layout_constraintTop_toBottomOf="@id/titlePagiPetang">
+
+        <ImageView
+            android:id="@+id/ivDzikirPagi"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:contentDescription="@string/imageview"
+            android:src="@drawable/ic_dzikir_pagi" />
+
+        <TextView
+            android:id="@+id/tvDzikirPagi"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_20dp"
+            android:text="@string/dzikir_di_waktu_pagi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvDzikirPetang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:backgroundTint="@color/black45"
+        app:cardCornerRadius="@dimen/_20dp"
+        app:layout_constraintTop_toBottomOf="@id/cvDzikirPagi">
+
+        <ImageView
+            android:id="@+id/ivDzikirPetang"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_100dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:contentDescription="@string/imageview"
+            android:src="@drawable/ic_dzikir_petang" />
+
+        <TextView
+            android:id="@+id/tvDzikirPetang"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_20dp"
+            android:text="@string/dzikir_di_waktu_petang"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

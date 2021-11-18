@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_20dp"
+    android:background="@drawable/bg_main_rectangle"
+    android:elevation="@dimen/_5dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10dp">
+
+    <TextView
+        android:id="@+id/tvDescItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16dp"
+        android:text="@string/description"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLafazItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:fontFamily="@font/arabic_arihna"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingTop="@dimen/_10dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:text="@string/lafaz"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTerjemahItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingTop="@dimen/_10dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:paddingBottom="@dimen/_16dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="italic" />
+
+</LinearLayout>
